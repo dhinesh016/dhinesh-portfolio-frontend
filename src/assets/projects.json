@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "img": "portfolio",
+      "name": "project1",
+      "about": "lorem",
+      "link": ""
+    },
+    {
+      "img": "sms",
+      "name": "project2",
+      "about": "lorem is good",
+      "link": ""
+    },
+    {
+      "img": "smart",
+      "name": "project1",
+      "about": "lorem",
+      "link": ""
+    },
+    {
+      "img": "console",
+      "name": "project2",
+      "about": "lorem is good",
+      "link": ""
+    }
+  ]
+}

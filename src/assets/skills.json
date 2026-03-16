@@ -1,0 +1,68 @@
+
+{
+  "frontend": [
+    {
+      "img": "html",
+      "name": "HTML5"
+    },
+    {
+      "img": "css",
+      "name": "CSS"
+    },
+    {
+      "img": "js",
+      "name": "Js"
+    },
+    {
+      "img": "react",
+      "name": "React js"
+    }
+  ],
+  "backend": [
+    {
+      "img": "java",
+      "name": "java"
+    },
+    {
+      "img": "spring",
+      "name": "Spring boot"
+    },
+    {
+      "img": "mysql",
+      "name": "SQL"
+    }
+  ],
+  "tools": [ {
+      "img": "eclipse",
+      "name": "Eclipse"
+    },
+     {
+      "img": "sql",
+      "name": "MYSQL"
+    },
+     {
+      "img": "git",
+      "name": "GIT"
+    },
+     {
+      "img": "springtool",
+      "name": "STS"
+    },
+     {
+      "img": "flowable",
+      "name": "Floable"
+    },
+     {
+      "img": "vscode",
+      "name": "VS code"
+    },
+       {
+      "img": "antigravity",
+      "name": "Antigravity"
+    },
+     {
+      "img": "postman",
+      "name": "PostMan"
+    }
+]
+}
