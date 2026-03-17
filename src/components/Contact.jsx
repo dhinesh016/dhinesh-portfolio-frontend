@@ -3,6 +3,7 @@ import Socialmedia from "./Socialmedia";
 import { useFormik } from "formik";
 import ValidateSchema from "./ValidateSchema";
 import axios from "axios"
+import  { toast,ToastContainer,Bounce } from "react-toastify"
 let initialdata = {
   username: "",
   email: "",
@@ -23,15 +24,18 @@ const Contact = () => {
     initialValues: initialdata,
     validationSchema: ValidateSchema,
     onSubmit:async(data) => {
-       setmessage("wait for some moment.....message was sending....")
+      // setmessage("wait for some moment.....message was sending....")
+       toast.warn("wait for some moment.....message was sending....")
       try{ 
        const res =await axios.post("http://localhost:9095/contact",data);
         handleReset();
         console.log(res);
-        setmessage(res.data.concat(" please check your email....."));
+        setmessage()
+      toast.success(res.data.concat(" please check your email....."))
       }
       catch(error){
-        setmessage("message not send try again later....")
+        setmessage()
+        toast.error("message not send try again later....");
          console.log(error)
       }
       finally{
@@ -98,7 +102,20 @@ const Contact = () => {
           <p className="error">
             {touched.message && errors.message ? errors.message : ""}
           </p>
-          <p className="message">{message!=null?message:""}</p>
+          <ToastContainer
+                  position="top-right"
+                  autoClose={5000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick={false}
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                  theme="dark"
+                  transition={Bounce}
+                
+                />
           <button type="submit" className="disabled" disabled={message!==null}>Submit</button>
         </form>
       </div>

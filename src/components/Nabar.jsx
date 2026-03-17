@@ -3,7 +3,7 @@ import { RiDownloadCloud2Fill } from "react-icons/ri";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import Mylogo from "./Mylogo";
-
+import mycv from "../assets/cv.pdf"
 const Nabar = () => {
   const[show,setShow]=useState(false);
   let handleShow=()=>
@@ -42,7 +42,7 @@ const Nabar = () => {
         </ul>
       </div>
       <div className="btn">
-        <button>
+        <a href={mycv} download={"Dhinesh Resume"}><button>
           <RiDownloadCloud2Fill
             style={{
               color: "red",
@@ -52,7 +52,7 @@ const Nabar = () => {
             }}
           />
           Download CV
-        </button>
+        </button></a>
       </div>
     </div>
   );
