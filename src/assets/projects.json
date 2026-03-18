@@ -2,27 +2,31 @@
   "projects": [
     {
       "img": "portfolio",
-      "name": "project1",
-      "about": "lorem",
-      "link": ""
+      "name": "Portfolio Website",
+      "about": "Built a personal portfolio website to showcase projects and skills with a responsive design and backend integration.",
+      "tech": "React, Spring Boot, MySQL",
+      "link": "https://github.com/dhinesh016/dhinesh-portfolio"
     },
     {
       "img": "sms",
-      "name": "project2",
-      "about": "lorem is good",
-      "link": ""
+      "name": "Student Management System",
+      "about": "Developed a web-based student management system to handle student records with CRUD operations and efficient backend processing.",
+      "tech": "Java, Spring Boot, MySQL, REST API",
+      "link": "https://github.com/dhinesh016/student-management-system"
     },
     {
       "img": "smart",
-      "name": "project1",
-      "about": "lorem",
-      "link": ""
+      "name": "Wearable Object Detection System",
+      "about": "Real-time object detection system using ESP32-CAM and YOLO to assist visually impaired users with audio guidance and obstacle alert",
+      "tech": "ESP32-CAM, YOLO, OpenCV, Python",
+      "link": "https://github.com/dhinesh016/smart-blind-navigation-system"
     },
     {
       "img": "console",
-      "name": "project2",
-      "about": "lorem is good",
-      "link": ""
+      "name": "Console-Based Projects",
+      "about": "Developed multiple console-based applications to strengthen programming fundamentals and problem-solving skills.",
+      "tech": "Java,MySQL",
+      "link": "https://github.com/dhinesh016/java-console-projects"
     }
   ]
 }

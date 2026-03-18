@@ -4,7 +4,6 @@ import images from "../assets/images"
 
 const Skills = () => {
   const [active, setactive] = useState(true);
-  console.log(skills.frontend);
   return (
     <div>
       <div id="skills" className="skill-container" data-aos="zoom-out">
@@ -16,7 +15,7 @@ const Skills = () => {
               setactive(!active);
             }}
           >
-            Frontend Technologys
+            Frontend Technology
           </h3>
           <h3
             className={!active ? "s-active" : ""}

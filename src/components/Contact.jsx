@@ -11,8 +11,8 @@ let initialdata = {
   message: "",
 };
 const Contact = () => {
-  let[message,setmessage]=useState(null)
-  let {
+  const[disabled,setDisabled]=useState(false);
+  const {
     handleBlur,
     handleChange,
     handleSubmit,
@@ -24,25 +24,21 @@ const Contact = () => {
     initialValues: initialdata,
     validationSchema: ValidateSchema,
     onSubmit:async(data) => {
-      // setmessage("wait for some moment.....message was sending....")
+      setDisabled(true);
        toast.warn("wait for some moment.....message was sending....")
       try{ 
        const res =await axios.post("http://localhost:9095/contact",data);
         handleReset();
-        console.log(res);
-        setmessage()
       toast.success(res.data.concat(" please check your email....."))
       }
       catch(error){
-        setmessage()
         toast.error("message not send try again later....");
          console.log(error)
       }
       finally{
-      setInterval(()=>{
-        setmessage(null)
+        setDisabled(false)
+      setTimeout(()=>{
       },5000)
-      console.log(data);
     }
       
     },
@@ -53,7 +49,7 @@ const Contact = () => {
       <div className="contact-info" data-aos="fade-right" data-aos-delay="500">
         <h2 className="heading">Contact</h2>
         <h4>Email</h4>
-        <h6>wwwskd007@gmail.com</h6>
+        <h5>wwwskd007@gmail.com</h5>
         <Socialmedia />
       </div>
       <div className="contact-form" data-aos="fade-left" data-aos-delay="500">
@@ -116,7 +112,7 @@ const Contact = () => {
                   transition={Bounce}
                 
                 />
-          <button type="submit" className="disabled" disabled={message!==null}>Submit</button>
+          <button type="submit" className="disabled" disabled={disabled}>Submit</button>
         </form>
       </div>
     </div>

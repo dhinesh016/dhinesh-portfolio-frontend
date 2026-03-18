@@ -9,7 +9,6 @@ const Nabar = () => {
   let handleShow=()=>
   {
     setShow(!show)
-    console.log(show)
   }
   return (
     <div className="nav-container">

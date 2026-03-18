@@ -116,7 +116,9 @@ html {
 .mylogo {
   width: fit-content;
 }
-
+p{
+  line-height: 25px;
+}
 .mylogo h1 {
   position: relative;
   font-size: 50px;
@@ -246,8 +248,16 @@ li a:hover::after {
   gap: 30px;
   background-color: #c2c2c267;
 }
+.intro h1,h3{
+  color: #fcad03;
+}
+/* .intro span{
+  display: block;
+  /* margin-left: 20px; */
+  /* color: #fcad03; */
+/* } */ 
 .intro p {
-  width: 80%;
+  width: 90%;
 }
 button{
   transition: all 1s;
@@ -294,7 +304,7 @@ button:hover {
   border-radius: 8px;
 }
 
-.about-container p {
+.about-container div {
   margin-right: 40px;
   width: 60%;
   height: 80%;
@@ -302,7 +312,14 @@ button:hover {
   background: #949494f5;
   border-radius: 10px;
 }
+.about-container div p{
+  margin: 10px;
+}
 
+.about-container div h2{
+  text-align: center;
+  display: none;
+}
 /* ---------skills-container------- */
 .skill-container {
   margin: 20px;
@@ -321,10 +338,12 @@ button:hover {
 .skills-head {
   display: flex;
   justify-content: center;
+  
   flex-wrap: wrap;
   gap: 30px;
 }
 .skills-head h3 {
+  color: #fff;
   position: relative;
 }
 .skills-head h3::after {
@@ -334,7 +353,7 @@ button:hover {
   left: 0;
   bottom: -6px;
   width: 0;
-  background-color: #ffaf1b;
+  background-color: #ffa600;
   transition: width 1s ease-in;
 }
 .skills-head > h3:hover::after {
@@ -380,7 +399,7 @@ button:hover {
 }
 .skill:hover .layer {
   height: 150px;
-  background: linear-gradient(#ffc400);
+  background: linear-gradient(#ff9900);
 }
 .skill img{
 
@@ -427,13 +446,11 @@ button:hover {
 .project img{
   height: 100%;
   width: 100%;
-  /* object-fit: contain; */
   border-radius: 8px;
-  /* object-position: center; */
 }
 .project-layer {
   position: absolute;
-  background: linear-gradient(#0000, #fcad03);
+  background: linear-gradient(#0000005b, #fc6703);
   height: 0;
   left: 0;
   width: 100%;
@@ -443,6 +460,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+ 
   justify-content: center;
   overflow: hidden;
   transition: height 1s;
@@ -452,6 +470,9 @@ button:hover {
 }
 .project:hover .project-layer {
   height: 100%;
+}
+.project-layer p{
+  text-align: center;
 }
 .more {
   background-color: #fcad03;
@@ -540,7 +561,7 @@ button {
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   /* .nav-list {
     position: fixed;
     
@@ -572,7 +593,7 @@ button {
   .home-container .intro {
     width:90%;
   }
-  .about-container p{
+  .about-container div{
     width: 100%;
     margin-right:0;
   }
@@ -587,8 +608,10 @@ button {
   .home-container{
       background-size: 300px;
   }
-  /* .active
-  {
-   height:100vh; 
-   } */
+  .about-container div h2{
+    display: block;
+  }
+  .about-container{
+    background:linear-gradient(#d8d8d8e3);
+  }
 }

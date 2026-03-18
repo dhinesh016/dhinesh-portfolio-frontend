@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='footer-container' data-aos="flip-down">
        <Socialmedia/>
-       <p>Copy Rights &copy; Recived</p>
+       <p>&copy;Designed & Developed by Dhinesh</p>
     </div>
   )
 }

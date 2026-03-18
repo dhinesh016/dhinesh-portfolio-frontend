@@ -4,7 +4,6 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import images from "../assets/images";
 
 const Projects = () => {
-  // console.log(projects.projects)
   const [more, setMore] = useState(false);
   return (
     <div id="projects" className={more?"project-container full":"project-container"}data-aos="fade-right">
@@ -18,6 +17,7 @@ const Projects = () => {
               <div className="project-layer">
                 <h4>{project.name}</h4>
                 <p>{project.about}</p>
+                <p>Tech:{project.tech}</p>
                 <button className="icon" >
                   <a href={project.link}><FaExternalLinkAlt style={{fontSize:"30px"}} /></a>
                 </button>

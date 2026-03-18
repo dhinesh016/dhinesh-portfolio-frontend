@@ -1,16 +1,13 @@
 import React from 'react'
 import Socialmedia from './Socialmedia'
 
-
-
 const Home = ({show,handleShow}) => {
-  console.log(show)
   return (
     <div id='home'  className='home-container'>
      <div className="intro" data-aos="fade-right" data-aos-delay="500">
-       <h3>Hii I am <span>Dhinesh S</span></h3>
-        <h1>Full Stack Developer</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis temporibus dolores magni asperiores cum repellat aperiam, doloribus et odio rerum, officia numquam velit, sunt incidunt. Maxime non laboriosam optio.</p>
+       <h3>Hii, I am <span>Dhinesh S</span></h3>
+        <h1 >Full Stack Developer</h1>
+        <p>A passionate Full Stack Developer with a strong foundation in Java, Spring Boot, and modern web technologies. I enjoy building real-world applications and continuously improving my skills in software development and problem-solving</p>
         <Socialmedia/>
      </div>
      <div className='btn2'>
